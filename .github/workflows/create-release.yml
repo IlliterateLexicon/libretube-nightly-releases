@@ -17,6 +17,7 @@ jobs:
   pre-release:
     name: "create nightly release"
     runs-on: "ubuntu-latest"
+    permissions: write-all
 
     steps:
       - name: "building"
