@@ -20,10 +20,7 @@ jobs:
     permissions: write-all
 
     steps:
-      - name: "building"
-        run: |
-          echo "done!"
-
+      - uses: "actions/checkout@v7"
       - uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
